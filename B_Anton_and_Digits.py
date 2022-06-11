@@ -1,0 +1,12 @@
+twos,threes,fives,sixes=map(int,input().split())
+sum1=0
+min1=min(twos,fives,sixes)
+sum1+=256*min1
+twos-=min1
+fives-=min1
+sixes-=min1
+min2=min(twos,threes)
+sum1+=32*min2
+twos-=min2
+threes-=min2
+print(sum1)
